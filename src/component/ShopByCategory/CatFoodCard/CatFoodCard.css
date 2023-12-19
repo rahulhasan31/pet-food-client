@@ -1,0 +1,63 @@
+FoodCard.css
+.food-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as needed */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .food-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .buttons-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .buttons-container {
+    opacity: 1;
+  }
+  
+  .button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  
+  .food-details {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .food-card {
+      max-width: 100%;
+    }
+  }
+  

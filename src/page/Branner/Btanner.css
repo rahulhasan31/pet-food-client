@@ -1,0 +1,63 @@
+@media only screen and (max-width: 600px) {
+    .lg:w-auto {
+      width: 100%; /* Adjust the width for mobile screens */
+    }
+  
+    .lg:left-56 {
+      left: 0; /* Adjust the left position for mobile screens */
+    }
+  
+    .lg:top-52 {
+      top: 0; /* Adjust the top position for mobile screens */
+    }
+  
+    .lg:text-5xl {
+      font-size: 2rem; /* Adjust the font size for mobile screens */
+    }
+  
+    .lg:w-96 {
+      width: 100%; /* Adjust the width for mobile screens */
+    }
+  
+    .w-screen {
+      width: 100%; /* Adjust the width for mobile screens */
+    }
+  
+    .relative {
+      position: relative; /* Ensure relative positioning for mobile screens */
+    }
+  
+  .cat-three{
+    display: flex;
+  }
+
+  .cat-three-one{
+    position: relative;
+    left: 200px;
+    top: 20px;
+  }
+  
+    /* Add more mobile styles as needed */
+  }
+
+
+
+
+
+
+  @media only screen and (min-width: 1025px) {
+    
+  .cat-three{
+    display: flex;
+  }
+
+  .cat-three-one{
+    position: relative;
+    left: 800px;
+    top: 200px;  
+  }
+ 
+  }
+
+
+
