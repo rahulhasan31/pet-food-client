@@ -5,13 +5,13 @@ const catFoodApi = api.injectEndpoints({
 
     getCatFoods: builder.query({
       query: (search) => ({
-        url: `http://localhost:3000/api/v1/cat-foods?search=${search}`,
+        url: `https://pet-food-server.vercel.app/api/v1/cat-foods?search=${search}`,
       }),
       providesTags:['foods']
     }),
     getCatFoodsQueries: builder.query({
       query: (shop) => ({
-        url: `http://localhost:3000/api/v1/cat-foods-query?shop=${shop}`,
+        url: `https://pet-food-server.vercel.app/api/v1/cat-foods-query?shop=${shop}`,
       }),
       providesTags:["foods"]
     }),
@@ -218,7 +218,7 @@ const catFoodApi = api.injectEndpoints({
   }),
   sellerAddFood:builder.query({
     query:(email)=>({
-      url:`http://localhost:3000/api/seller/foods?email=${email}`
+      url:`https://pet-food-server.vercel.app/api/seller/foods?email=${email}`
     }),
     providesTags:['foods']
   }),

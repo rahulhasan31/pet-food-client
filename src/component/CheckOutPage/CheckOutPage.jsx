@@ -69,7 +69,7 @@ const CheckOutPage = () => {
   //   };
   
   //   try {
-  //     const res = await fetch("http://localhost:3000/api/create-checkout-session", {
+  //     const res = await fetch("https://pet-food-server.vercel.app/api/create-checkout-session", {
   //       method: "POST",
   //       headers: headers,
   //       body: JSON.stringify(body),
@@ -97,7 +97,7 @@ const CheckOutPage = () => {
   // };
 
   // useEffect(()=>{
-  //   axios.get('http://localhost:3000/payment')
+  //   axios.get('https://pet-food-server.vercel.app/payment')
   //   .then((data)=>{
   //       setPaymentsData(data)
   //   })

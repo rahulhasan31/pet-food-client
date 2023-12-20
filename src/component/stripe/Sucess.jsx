@@ -10,7 +10,7 @@ const Sucess = () => {
     const {id}=useParams()
     console.log(id);
     useEffect(()=>{
-        axios.get('http://localhost:3000/payment')
+        axios.get('https://pet-food-server.vercel.app/payment')
         .then((data)=>{
             setPaymentsData(data)
         })

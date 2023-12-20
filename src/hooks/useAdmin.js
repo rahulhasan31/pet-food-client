@@ -6,7 +6,7 @@ const useAdmin=email=>{
     const [isAdminLoading, setIsAdminLoading]=useState(true)
 
     useEffect(()=>{
-    fetch(`http://localhost:3000/api/v1/admin/${email}`)
+    fetch(`https://pet-food-server.vercel.app/api/v1/admin/${email}`)
     .then(res=> res.json())
     .then(data=> {
         console.log(data);

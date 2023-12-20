@@ -6,7 +6,7 @@ const useSeller=email=>{
     const [isSellerLoading, setisSellerLoading]=useState(true)
 
     useEffect(()=>{
-    fetch(`http://localhost:3000/api/v1/seller/${email}`)
+    fetch(`https://pet-food-server.vercel.app/api/v1/seller/${email}`)
     .then(res=> res.json())
     .then(data=> {
         console.log(data);

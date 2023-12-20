@@ -9,7 +9,7 @@ const Category = () => {
  
 
    useEffect(()=>{
-    axios.get('http://localhost:3000/api/v1/catgory')
+    axios.get('https://pet-food-server.vercel.app/api/v1/catgory')
     .then((data)=>{
         setData(data)
     })
