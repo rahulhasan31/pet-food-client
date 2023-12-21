@@ -11,7 +11,7 @@ const initialState={
 
 
 export const fetchFood=createAsyncThunk('foods/fetchfood', async()=>{
-    const res= await fetch('https://pet-food-server.vercel.app/api/v1/cat-foods')
+    const res= await fetch('https://pet-food-server.onrender.com/api/v1/cat-foods')
     const data= await res.json()
 
     return data.data
@@ -19,7 +19,7 @@ export const fetchFood=createAsyncThunk('foods/fetchfood', async()=>{
 
 })
 export const addToCart = createAsyncThunk('foods/addToCart', async (item) => {
-    const response = await fetch('https://pet-food-server.vercel.app/api/v1/add-to-cart', {
+    const response = await fetch('https://pet-food-server.onrender.com/api/v1/add-to-cart', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

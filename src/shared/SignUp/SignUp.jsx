@@ -86,7 +86,7 @@ console.log('createdEmail', createdEmail);
     }
 
     // const getToken=email=>{
-    //   fetch(`https://pet-food-server.vercel.app/jwt?email=${email}`)
+    //   fetch(`https://pet-food-server.onrender.com/jwt?email=${email}`)
     //   .then(res=>res.json())
     //   .then(data=>{
     //     if(data.accessToken){

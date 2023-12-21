@@ -26,7 +26,7 @@ const CheckoutForm = ({ foodData, overallTotal }) => {
   useEffect(() => {
     
     if(overallTotal){
-      fetch("https://pet-food-server.vercel.app/create-payment-intent", {
+      fetch("https://pet-food-server.onrender.com/create-payment-intent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({overallTotal: overallTotal}),
