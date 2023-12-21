@@ -8,7 +8,10 @@ const MyProfile = () => {
     const {user}=useContext(AuthContext)
 
     const email=user?.email
-    const {data:queryData,isLoading}=useGetUserQueriesQuery(email)
+    const {data:queryData,isLoading}=useGetUserQueriesQuery(email,{
+        pollingInterval:10000,
+        refetchOnMountOrArgChange: true
+    })
    const[updateUser,{isSuccess}]=useUpdateUserMutation(email)
     const imgHostKey = import.meta.env.VITE_imgHostKey
     
