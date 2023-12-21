@@ -74,19 +74,23 @@ console.log(input);
       
         >
              <Row>
-      {
-        sellerLoading?<><Loading/></>:<Col span={6}> 
+    
+        <Col span={6}> 
         <h1 className="lg:text-center text-2xl font-semibold bg-green-400 text-white  rounded-md py-2   max-sm:text-xs">Food Shop Name</h1>
 
-        {
+         {
+          sellerLoading?<><span className="loading loading-ring loading-lg"></span></>:<>
+           {
           sellerData?.map((seller)=><ShopName key={seller._id} seller={seller}/>
           )
         }
 
+          </>
+         }
 
 
       </Col>
-      }
+  
       <Col span={18} >
       <div  className='text-center mb-2'>
      <form onSubmit={handleSubmit}>

@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .responsive-table-container {
+      overflow-x: auto;
+    }
+  
+    .responsive-table th,
+    .responsive-table td {
+      white-space: nowrap;
+    }
+  }

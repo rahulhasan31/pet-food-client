@@ -58,11 +58,21 @@ const Login = () => {
        
        
          
-     <div className="text-center text-2xl font-semibold text-green-400">
-        <h1 >Sign IN Now </h1>
+   
+     <br />
+     <div className="  text-center text-xl font-semibold text-red-400">
+     <small >Admin Login Info</small>
+     <br />
+     <small > Email: rahulhasan@gmail.com</small>
+     <br />
+        <small >Pass: 123456</small>
      </div>
 
 <form className="p-9" onSubmit={handleLogin}>
+<div className="text-center text-2xl font-semibold text-green-400">
+        <h1 >Sign IN Now </h1>
+        
+     </div>
   <div className="mb-6">
     <label to="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
     <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Email" required/>

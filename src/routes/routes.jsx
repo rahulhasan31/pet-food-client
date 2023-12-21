@@ -24,9 +24,10 @@ import Main from "../Main/Main";
 import Home from "../page/Home/Home";
 import AdminRoute from "../private/AdminRoute/AdminRoute";
 import PrivateRoute from "../private/PrivateRoute ";
+import ErrorPage from "../shared/Error/ErrorPage";
 
 
-import ErrorPage from "../shared/ErrorPage";
+
 import Login from "../shared/Login/Login";
 import SignUp from "../shared/SignUp/SignUp";
 

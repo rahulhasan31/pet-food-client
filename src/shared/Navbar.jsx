@@ -112,7 +112,7 @@ toast.success('SuccessFull Remove Food')
     </div>
  
   
-    </>:<Link to={'/login'}>
+    </>:<Link className="max-sm:hidden" to={'/login'}>
      <button type="button" className="text-white bg-green-400 py-2 px-5 rounded-full">Login</button>
      </Link>
    }
@@ -209,6 +209,54 @@ toast.success('SuccessFull Remove Food')
                       </Link>
                     </li>
                     </>:" "
+                    
+                  }
+                     <li>
+                      <Link
+                        to={"/contact"}
+                        aria-label="Our product"
+                        title="Our product"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                     <li>
+                      <Link
+                        to={"/blog"}
+                        aria-label="Our product"
+                        title="Our product"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        blog
+                      </Link>
+                    </li>
+
+                  {
+                    user?.uid?<>
+                     <li>
+                      <Link
+                        onClick={logOutUser}
+                        aria-label="Product pricing"
+                        title="Product pricing"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Logout
+                      </Link>
+                    </li>
+                    </>:<>
+                   <li className="bg-green-500  w-28 px-8 py-2 rounded-md ">
+                      <Link
+                        to={"/login"}
+                        aria-label="Product pricing"
+                        title="Product pricing"
+                        className="font-medium text-white"
+                      >
+                        login
+                      </Link>
+                    </li>
+                  
+                    </>
                   }
                  
                   </ul>
@@ -221,7 +269,7 @@ toast.success('SuccessFull Remove Food')
 
    <div
         id="drawer-navigation"
-        className={`fixed top-0 right-0 z-40 w-1/2 h-screen p-4 overflow-y-auto transition-transform ${
+        className={`fixed top-0 right-0 z-40 lg:w-1/2 h-screen p-4 overflow-y-auto transition-transform max-sm:w-full ${
           sidebarOpen ? '' : 'translate-x-full'
         } bg-white dark:bg-gray-800`}
         tabIndex="-1"
@@ -268,9 +316,11 @@ toast.success('SuccessFull Remove Food')
         
 
 {
-  user?.uid && data?.length ?<><div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-  <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-      <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+  user?.uid && data?.length ?<>
+  
+  <div className="relative overflow-x-auto shadow-md sm:rounded-lg  max-sm:w-full max-sm:p-3">
+  <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400  ">
+      <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ">
           <tr>
               <th scope="col" className="px-5 py-3">
                   Image
@@ -335,7 +385,9 @@ toast.success('SuccessFull Remove Food')
       </tbody>
      
   </table>
-</div></>:""
+</div>
+
+</>:""
 }
 
 
